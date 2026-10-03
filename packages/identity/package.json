@@ -1,0 +1,26 @@
+{
+  "name": "@distrisec/identity",
+  "version": "0.1.0",
+  "type": "module",
+  "main": "./dist/index.js",
+  "types": "./dist/index.d.ts",
+  "scripts": {
+    "build": "tsc -b",
+    "test": "vitest run",
+    "clean": "rimraf dist *.tsbuildinfo",
+    "db:generate": "drizzle-kit generate",
+    "db:migrate": "drizzle-kit migrate",
+    "db:studio": "drizzle-kit studio"
+  },
+  "dependencies": {
+    "@distrisec/shared": "*",
+    "drizzle-orm": "^0.36.1",
+    "pg": "^8.13.1",
+    "@node-rs/argon2": "^2.0.2"
+  },
+  "devDependencies": {
+    "drizzle-kit": "^0.28.1",
+    "@types/pg": "^8.11.10",
+    "dotenv": "^16.4.5"
+  }
+}

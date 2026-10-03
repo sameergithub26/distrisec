@@ -1,0 +1,16 @@
+{
+  "files": [],
+  "references": [
+    { "path": "packages/shared" },
+    { "path": "packages/identity" },
+    { "path": "packages/policy-engine" },
+    { "path": "packages/event-pipeline" },
+    { "path": "packages/audit-log" },
+    { "path": "packages/threat-detection" },
+    { "path": "packages/threat-graph" },
+    { "path": "packages/storage" },
+    { "path": "packages/risk-engine" },
+    { "path": "apps/gateway" },
+    { "path": "apps/simulator" }
+  ]
+}
