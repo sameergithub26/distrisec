@@ -1,0 +1,25 @@
+{
+  "name": "@distrisec/gateway",
+  "version": "0.1.0",
+  "type": "module",
+  "main": "./dist/index.js",
+  "types": "./dist/index.d.ts",
+  "scripts": {
+    "build": "tsc -b",
+    "test": "vitest run",
+    "clean": "rimraf dist *.tsbuildinfo"
+  },
+  "dependencies": {
+    "@distrisec/shared": "*",
+    "@distrisec/identity": "*",
+    "@distrisec/policy-engine": "*",
+    "@distrisec/audit-log": "*",
+    "@distrisec/event-pipeline": "*",
+    "@distrisec/risk-engine": "*"
+  },
+  "devDependencies": {
+    "dotenv": "^16.4.5",
+    "drizzle-orm": "^0.36.1",
+    "@distrisec/threat-detection": "*"
+  }
+}
